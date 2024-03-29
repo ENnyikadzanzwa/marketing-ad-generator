@@ -10,7 +10,7 @@ st.set_page_config(
     )
 
 url = "https://api.openai.com/v1/chat/completions"
-openai_api_key = "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"
+openai_api_key = st.secrets("API_KEY")
 model_name = "gpt-3.5-turbo"  
 
 headers = {
